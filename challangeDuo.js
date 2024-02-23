@@ -19,7 +19,7 @@ rankeadasValue=dataValue(100,25)
 console.log("Your rankead balance is "+ rankeadasValue+".")
 
 
-switch(rankeadasValue){
+switch(true){
     case rankeadasValue<10:
         level="iron"
             break
