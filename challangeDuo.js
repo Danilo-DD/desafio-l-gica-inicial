@@ -1,26 +1,23 @@
-//Desafio de projeto 2!
-
-//Função que recebe como parâmetro as vitórias e derrotas do player:
-
 let victory = 100
 let defeat= 25
-let level=
+let level=" "
 
-
-totalPlays=recieved(100, 25)
-console.log("You played "+totalPlays+" games in your entire career.")
-console.log("Like this, you have "+victory+" victories and "+defeat+" defeats.")
 function recieved(victory, defeat){
     let sum=victory+defeat
     return sum
 }
+totalPlays=recieved(100, 25)
+console.log("You played "+totalPlays+" games in your entire career.")
+console.log("Like this, you have "+victory+" victories and "+defeat+" defeats.")
 
-let rankeadasValue=dataValue(100,25)
-console.log("Your rankead balance is "+ rankeadasValue+".")
+
 function dataValue(victory,defeat){
     let sub= victory-defeat
     return sub
 }
+rankeadasValue=dataValue(100,25)
+console.log("Your rankead balance is "+ rankeadasValue+".")
+
 
 switch(rankeadasValue){
     case rankeadasValue<10:
