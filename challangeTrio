@@ -1,0 +1,47 @@
+class hero{
+    constructor(nameHero,age,type,attack){
+        this.name=nameHero;
+        this.age=age;
+        this.type=type;
+    }
+
+
+toAttack(){
+    let attack;
+
+    switch(this.type){
+
+        case "mago":
+            attack="magia";
+            console.log(`O ${this.type} atacou usando ${attack}`)
+            break
+    
+        case "guerreiro":
+            attack= "espada";
+            console.log(`O ${this.type} atacou usando ${attack}`)
+            break
+
+        case "monge":
+            attack= "artes marciais";
+            console.log(`O ${this.type} atacou usando ${attack}`)
+            break
+
+        case "ninja":
+            attack= "shuriken";
+            console.log(`O ${this.type} atacou usando ${attack}`)
+        }
+    }
+}
+    
+    
+
+
+let hero1= new hero("Odin", 500, "mago");
+let hero2= new hero("Brobor", 689, "guerreiro");
+let hero3= new hero("Zeus", 346, "monge");
+let hero4= new hero("Suzuki", 98, "ninja");
+
+hero1.toAttack();
+hero2.toAttack();
+hero3.toAttack();
+hero4.toAttack();
